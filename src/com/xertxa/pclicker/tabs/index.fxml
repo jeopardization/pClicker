@@ -94,16 +94,6 @@
                         <Font name="Consolas" size="14.0"/>
                     </font>
                 </Button>
-                <Label layoutX="548.0" layoutY="14.0" maxWidth="40.0" text="${maxCPS.text}" textAlignment="RIGHT">
-                    <font>
-                        <Font name="Consolas" size="16.0"/>
-                    </font>
-                </Label>
-                <Label layoutX="548.0" layoutY="52.0" maxWidth="40.0" text="${minCPS.text}" textAlignment="RIGHT">
-                    <font>
-                        <Font name="Consolas" size="16.0"/>
-                    </font>
-                </Label>
                 <TextField fx:id="minCPS" layoutX="137.0" layoutY="49.0" prefHeight="25.0" prefWidth="440.0" text="8">
                     <font>
                         <Font name="Consolas" size="12.0"/>
