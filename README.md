@@ -1,6 +1,9 @@
 # pClicker
 Customizable autoclicker designed to simulate mouse clicks.
 
+## Screenshots
+![](https://i.imgur.com/ChBh1GU.png)
+
 ## Features
 - **Maximum/Minimum CPS** - CPS (clicks per second) range to click at.
 - **Require Window** - Forces the autoclicker to work only within specific applications.
