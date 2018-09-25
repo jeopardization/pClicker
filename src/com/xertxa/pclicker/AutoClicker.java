@@ -9,7 +9,6 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class AutoClicker implements Runnable {
     public static boolean active;
     public static boolean robotMouseEvent;
@@ -27,6 +26,9 @@ public class AutoClicker implements Runnable {
         if (enabled) {
             robotMouseEvent = false;
             new Thread(new AutoClicker()).start();
+            Controller.instance.toggle.setSelected(true);
+        } else {
+            Controller.instance.toggle.setSelected(false);
         }
     }
 

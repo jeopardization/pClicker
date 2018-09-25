@@ -59,7 +59,7 @@
                         <Font name="Consolas" size="14.0"/>
                     </font>
                 </CheckBox>
-                <ToggleButton layoutX="23.0" layoutY="160.0" mnemonicParsing="false" onAction="#toggle"
+                <ToggleButton fx:id="toggle" layoutX="23.0" layoutY="160.0" mnemonicParsing="false" onAction="#toggle"
                               prefHeight="45.0" prefWidth="150.0" text="Enable">
                     <font>
                         <Font name="Consolas" size="14.0"/>
