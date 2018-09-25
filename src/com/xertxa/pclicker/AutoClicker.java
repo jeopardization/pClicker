@@ -21,7 +21,6 @@ public class AutoClicker implements Runnable {
     static double minCPS;
     private static boolean enabled;
     private static Robot robot;
-    private boolean killswitch;
 
     public static void toggle() {
         enabled = !enabled;
@@ -35,7 +34,7 @@ public class AutoClicker implements Runnable {
         try {
             robotMouseEvent = true;
             robot.mousePress(16);
-            Thread.sleep(Random.nextLong(5, 15L));
+            Thread.sleep(Random.nextLong(5L, 15L));
             robot.mouseRelease(16);
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -48,13 +47,14 @@ public class AutoClicker implements Runnable {
             robot = new Robot();
             while (enabled) {
                 if (!getWindowTitle().equals("pClicker")) {
-                    killswitch = (requireWindow) && (!inWindow());
-                    if ((active) && (!killswitch)) {
+                    if ((requireWindow) && (!inWindow())) {
+                        return;
+                    }
+                    if (active) {
                         Thread.sleep(Random.nextAverageLong(1000.0D / maxCPS, 1000.0D / minCPS));
                         click();
                     }
                 }
-                killswitch = false;
             }
         } catch (Exception ex) {
             ex.printStackTrace();
