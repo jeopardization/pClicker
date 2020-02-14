@@ -1,6 +1,6 @@
 # pClicker
 
-![](https://i.imgur.com/ChBh1GU.png)
+![](https://i.imgur.com/5EMxGOI.png)
 
 **1.1 - 2/14/2020**<br>
 • Added configuration system
