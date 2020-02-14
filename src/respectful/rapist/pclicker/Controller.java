@@ -91,7 +91,7 @@ public class Controller {
                 this.requireWindow.setSelected(requireWindow);
             } else {
                 new Alert(Alert.AlertType.INFORMATION, "Configuration file was not found, a new one will be created.", ButtonType.OK).show();
-                writeConfig();
+                apply();
             }
         } catch (Exception ex) {
             new Alert(Alert.AlertType.ERROR, ex.toString(), ButtonType.OK).show();
