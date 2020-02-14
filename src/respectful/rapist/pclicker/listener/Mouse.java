@@ -1,25 +1,23 @@
-package com.xertxa.pclicker.listener;
+package respectful.rapist.pclicker.listener;
 
 import lc.kra.system.mouse.event.GlobalMouseEvent;
 import lc.kra.system.mouse.event.GlobalMouseListener;
-
-import static com.xertxa.pclicker.AutoClicker.active;
-import static com.xertxa.pclicker.AutoClicker.robotMouseEvent;
+import respectful.rapist.pclicker.AutoClicker;
 
 public class Mouse implements GlobalMouseListener {
     @Override
     public void mousePressed(GlobalMouseEvent globalMouseEvent) {
-        if ((!robotMouseEvent) && (globalMouseEvent.getButton() == 1)) {
-            active = true;
+        if (!AutoClicker.robotMouseEvent && globalMouseEvent.getButton() == 1) {
+            AutoClicker.active = true;
         }
     }
 
     @Override
     public void mouseReleased(GlobalMouseEvent globalMouseEvent) {
-        if ((!robotMouseEvent) && (globalMouseEvent.getButton() == 1)) {
-            active = false;
+        if ((!AutoClicker.robotMouseEvent) && (globalMouseEvent.getButton() == 1)) {
+            AutoClicker.active = false;
         } else {
-            robotMouseEvent = false;
+            AutoClicker.robotMouseEvent = false;
         }
     }
 

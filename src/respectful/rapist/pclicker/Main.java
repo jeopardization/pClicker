@@ -1,7 +1,5 @@
-package com.xertxa.pclicker;
+package respectful.rapist.pclicker;
 
-import com.xertxa.pclicker.listener.Keyboard;
-import com.xertxa.pclicker.listener.Mouse;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
@@ -12,6 +10,8 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import lc.kra.system.keyboard.GlobalKeyboardHook;
 import lc.kra.system.mouse.GlobalMouseHook;
+import respectful.rapist.pclicker.listener.Keyboard;
+import respectful.rapist.pclicker.listener.Mouse;
 
 public class Main extends Application {
     static Stage primaryStage;

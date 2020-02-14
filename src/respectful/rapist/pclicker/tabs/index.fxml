@@ -8,13 +8,13 @@
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
             minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="296.0"
             prefWidth="600.0" style="-fx-background-color: rgba(19,16,18,0.0);"
-            xmlns="http://javafx.com/javafx/10.0.1" fx:controller="com.xertxa.pclicker.Controller">
+            xmlns="http://javafx.com/javafx/10.0.1" fx:controller="respectful.rapist.pclicker.Controller">
     <children>
         <AnchorPane prefHeight="65.0" prefWidth="600.0" style="-fx-background-color: rgba(19,16,18, 0.50);">
             <children>
                 <Label layoutX="18.0" layoutY="20.0" text="pClicker" textFill="WHITE">
                     <font>
-                        <Font name="Consolas" size="18.0"/>
+                        <Font name="Arial" size="18.0"/>
                     </font>
                 </Label>
                 <Button layoutX="567.0" layoutY="22.0" mnemonicParsing="false" onAction="#exit" prefHeight="14.0"
@@ -45,64 +45,64 @@
             <children>
                 <Label layoutX="23.0" layoutY="14.0" text="Maximum CPS">
                     <font>
-                        <Font name="Consolas" size="16.0"/>
+                        <Font name="Arial" size="16.0"/>
                     </font>
                 </Label>
                 <Label layoutX="23.0" layoutY="52.0" text="Minimum CPS">
                     <font>
-                        <Font name="Consolas" size="16.0"/>
+                        <Font name="Arial" size="16.0"/>
                     </font>
                 </Label>
                 <CheckBox fx:id="requireWindow" layoutX="361.0" layoutY="170.0" mnemonicParsing="false"
                           prefHeight="25.0" prefWidth="141.0" text="Require Window">
                     <font>
-                        <Font name="Consolas" size="14.0"/>
+                        <Font name="Arial" size="14.0"/>
                     </font>
                 </CheckBox>
                 <ToggleButton fx:id="toggle" layoutX="23.0" layoutY="160.0" mnemonicParsing="false" onAction="#toggle"
                               prefHeight="45.0" prefWidth="150.0" text="Enable">
                     <font>
-                        <Font name="Consolas" size="14.0"/>
+                        <Font name="Arial" size="14.0"/>
                     </font>
                 </ToggleButton>
                 <Label layoutX="23.0" layoutY="89.0" text="Window List">
                     <font>
-                        <Font name="Consolas" size="16.0"/>
+                        <Font name="Arial" size="16.0"/>
                     </font>
                 </Label>
                 <TextField fx:id="windowList" layoutX="137.0" layoutY="86.0" prefHeight="25.0" prefWidth="440.0"
                            text="Minecraft 1.7.10,Minecraft 1.8.9">
                     <font>
-                        <Font name="Consolas" size="12.0"/>
+                        <Font name="Arial" size="12.0"/>
                     </font>
                 </TextField>
                 <ChoiceBox fx:id="toggleKey" layoutX="137.0" layoutY="124.0" prefHeight="25.0" prefWidth="135.0"/>
                 <Label layoutX="23.0" layoutY="127.0" text="Toggle Key">
                     <font>
-                        <Font name="Consolas" size="16.0"/>
+                        <Font name="Arial" size="16.0"/>
                     </font>
                 </Label>
                 <ChoiceBox fx:id="hideShowKey" layoutX="442.0" layoutY="124.0" prefHeight="25.0" prefWidth="135.0"/>
                 <Label layoutX="303.0" layoutY="128.0" text="Hide/Show Key">
                     <font>
-                        <Font name="Consolas" size="16.0"/>
+                        <Font name="Arial" size="16.0"/>
                     </font>
                 </Label>
                 <Button layoutX="191.0" layoutY="160.0" mnemonicParsing="false" onAction="#apply" prefHeight="45.0"
                         prefWidth="150.0" text="Apply">
                     <font>
-                        <Font name="Consolas" size="14.0"/>
+                        <Font name="Arial" size="14.0"/>
                     </font>
                 </Button>
-                <TextField fx:id="minCPS" layoutX="137.0" layoutY="49.0" prefHeight="25.0" prefWidth="440.0" text="8">
+                <TextField fx:id="minCPS" layoutX="137.0" layoutY="49.0" prefHeight="25.0" prefWidth="440.0" text="9.0">
                     <font>
-                        <Font name="Consolas" size="12.0"/>
+                        <Font name="Arial" size="12.0"/>
                     </font>
                 </TextField>
                 <TextField fx:id="maxCPS" layoutX="137.0" layoutY="11.0" prefHeight="25.0" prefWidth="440.0"
-                           text="13.5">
+                           text="14.0">
                     <font>
-                        <Font name="Consolas" size="12.0"/>
+                        <Font name="Arial" size="12.0"/>
                     </font>
                 </TextField>
             </children>

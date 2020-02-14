@@ -1,11 +1,12 @@
 # pClicker
-Customizable autoclicker designed to simulate mouse clicks.
 
-## Screenshots
 ![](https://i.imgur.com/ChBh1GU.png)
 
-## Features
-- **Maximum/Minimum CPS** - CPS (clicks per second) range to click at.
-- **Require Window** - Forces the autoclicker to work only within specific applications.
-- **Toggle Key** - Keybind to enable/disable the autoclicker.
-- **Hide/Show Key** - Keybind to enable/disable pClicker's visibility. When hidden, the autoclicker will still run in the background.
+**1.1 - 2/14/2020**<br>
+• Added configuration system
+• Improved UI
+• Improved performance
+• Bug fixes
+
+**1.0 - 8/22/2018**<br>
+• Initial release

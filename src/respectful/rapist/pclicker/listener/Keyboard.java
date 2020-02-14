@@ -1,21 +1,17 @@
-package com.xertxa.pclicker.listener;
+package respectful.rapist.pclicker.listener;
 
-import com.xertxa.pclicker.AutoClicker;
-import com.xertxa.pclicker.Controller;
 import javafx.application.Platform;
 import lc.kra.system.keyboard.event.GlobalKeyEvent;
 import lc.kra.system.keyboard.event.GlobalKeyListener;
-
-import static com.xertxa.pclicker.AutoClicker.toggle;
+import respectful.rapist.pclicker.AutoClicker;
+import respectful.rapist.pclicker.Controller;
 
 public class Keyboard implements GlobalKeyListener {
     @Override
     public void keyPressed(GlobalKeyEvent globalKeyEvent) {
         if (globalKeyEvent.getVirtualKeyCode() == AutoClicker.toggleKey) {
-            toggle();
-        }
-
-        if (globalKeyEvent.getVirtualKeyCode() == AutoClicker.hideShowKey) {
+            Controller.instance.toggle();
+        } else if (globalKeyEvent.getVirtualKeyCode() == AutoClicker.hideShowKey) {
             Platform.runLater(Controller::toggleVisibility);
         }
     }
