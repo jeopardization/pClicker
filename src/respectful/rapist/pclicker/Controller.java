@@ -28,6 +28,7 @@ public class Controller {
     @FXML
     private CheckBox requireWindow;
 
+    @FXML
     public void toggleVisibility() {
         visible = !visible;
         if (visible) {
@@ -40,11 +41,6 @@ public class Controller {
     @FXML
     private void exit() {
         System.exit(0);
-    }
-
-    @FXML
-    private void minimize() {
-        Main.primaryStage.hide();
     }
 
     @FXML

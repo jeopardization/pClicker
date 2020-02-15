@@ -15,8 +15,7 @@ import respectful.rapist.pclicker.listener.Mouse;
 
 public class Main extends Application {
     static Stage primaryStage;
-    private double xOffset = 0.0D;
-    private double yOffset = 0.0D;
+    private double xOffset = 0.0D, yOffset = 0.0D;
 
     public static void main(String[] args) {
         launch(args);

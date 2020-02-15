@@ -27,7 +27,8 @@
                         </ImageView>
                     </graphic>
                 </Button>
-                <Button layoutX="530.0" layoutY="22.0" mnemonicParsing="false" onAction="#minimize" prefHeight="24.0"
+                <Button layoutX="530.0" layoutY="22.0" mnemonicParsing="false" onAction="#toggleVisibility"
+                        prefHeight="24.0"
                         prefWidth="6.0" style="-fx-background-color: rgba(0,0,0,0.0);">
                     <graphic>
                         <ImageView fitHeight="14.0" fitWidth="14.0">
