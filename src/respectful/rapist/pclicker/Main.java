@@ -43,9 +43,7 @@ public class Main extends Application {
             primaryStage.setX(event.getScreenX() - xOffset);
             primaryStage.setY(event.getScreenY() - yOffset);
         });
-        GlobalMouseHook mouseHook = new GlobalMouseHook();
-        mouseHook.addMouseListener(new Mouse());
-        GlobalKeyboardHook keyboardHook = new GlobalKeyboardHook();
-        keyboardHook.addKeyListener(new Keyboard());
+        new GlobalMouseHook().addMouseListener(new Mouse());
+        new GlobalKeyboardHook().addKeyListener(new Keyboard());
     }
 }

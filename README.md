@@ -6,6 +6,7 @@
 • Added configuration system<br>
 • Improved UI<br>
 • Improved performance<br>
+• Improved error handling<br>
 • Bug fixes
 
 **1.0 - 8/22/2018**<br>

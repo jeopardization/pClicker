@@ -2,22 +2,22 @@ package respectful.rapist.pclicker.listener;
 
 import lc.kra.system.mouse.event.GlobalMouseEvent;
 import lc.kra.system.mouse.event.GlobalMouseListener;
-import respectful.rapist.pclicker.AutoClicker;
+import respectful.rapist.pclicker.Controller;
 
 public class Mouse implements GlobalMouseListener {
     @Override
     public void mousePressed(GlobalMouseEvent globalMouseEvent) {
-        if (!AutoClicker.robotMouseEvent && globalMouseEvent.getButton() == 1) {
-            AutoClicker.active = true;
+        if (!Controller.instance.autoClicker.robotMouseEvent && globalMouseEvent.getButton() == 1) {
+            Controller.instance.autoClicker.active = true;
         }
     }
 
     @Override
     public void mouseReleased(GlobalMouseEvent globalMouseEvent) {
-        if ((!AutoClicker.robotMouseEvent) && (globalMouseEvent.getButton() == 1)) {
-            AutoClicker.active = false;
+        if (!Controller.instance.autoClicker.robotMouseEvent && globalMouseEvent.getButton() == 1) {
+            Controller.instance.autoClicker.active = false;
         } else {
-            AutoClicker.robotMouseEvent = false;
+            Controller.instance.autoClicker.robotMouseEvent = false;
         }
     }
 
